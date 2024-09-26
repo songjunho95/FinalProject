@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 5vh;
+}
+
+h2 {
+  font-size: 4vh;
+  margin: 30px;
+}
+
+p {
+  font-size: 2vh;
+  margin-bottom: 30px;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30vh;
+  padding-right: 30vh;
+  align-items: center;
+  border-color: black 10px;
+  height: 100px;
+}
+
+.section1 {
+  height: 70vh;
+}
+
+#star {
+  height: 70vh;
+  width: 100%;
+}
+
+#image12 {
+  display: flex;
+}
+
+#image1 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+#image2 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 10%;
+  background-color: rgba(153, 205, 50, 0.281);
+  height: 60vh;
+}
+
+.section2 > div {
+  color: rgba(238, 183, 81, 0.979);
+}
+
+#image34 {
+  display: flex;
+}
+
+#image3 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+#image4 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 10%;
+  background-color: rgba(127, 255, 212, 0.473);
+  height: 60vh;
+}
+
+.section3 > div {
+  color: rgba(24, 83, 59, 0.979);
+}
+
+.section4 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 10%;
+  background-color: bisque;
+  height: 60vh;
+}
+
+.section4 > div {
+  color: rgba(87, 56, 16, 0.979);
+}
+
+#image45 {
+  display: flex;
+}
+
+#image4 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+#image5 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+.section5 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 500px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 0, 0.322) 50%,
+    rgba(0, 17, 255, 0.212) 50%
+  );
+}
+
+.app {
+  margin-top: 65px;
+}
+
+.map {
+  margin-top: 100px;
+}
+
+.section6 {
+  background-color: rgba(0, 17, 255, 0.212);
+  height: 350px;
+}
+
+/* 전체영역에서 여백을 없애줌 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ul li태그에 리스트 스타일을 없앰 */
+ul li {
+  list-style: none;
+}
+/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
+menu박스 가운데정렬, 글자가운데 정렬 */
+#menu {
+  font: bold 16px "malgun gothic";
+  width: 700px;
+  height: 50px;
+  background: #ffffff;
+  color: black;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+/* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+
+#menu > ul > li {
+  float: left;
+  width: 140px;
+}
+
+#menu > ul > li > ul {
+  width: 130px;
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  background: whitesmoke;
+}
+
+#menu > ul > li:hover > ul {
+  display: block;
+}
+
+#menu > ul > li > ul > li:hover {
+  background: pink;
+  transition: ease 1s;
+}
+
+footer {
+  border-top: solid 0.1px gray;
+  padding-top: 150px;
+  height: 30vh;
+  text-align: center;
+  text-align: justify;
+  padding-left: 20%;
+  margin: 5px;
+}
+
+#text {
+  border: hotpink solid 2px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#phone {
+  border: hotpink solid 2px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  width: 300px;
+}
+
+button {
+  height: 50px;
+  color: white;
+  background-color: hotpink;
+  width: 90px;
+  border: hotpink solid 2px;
+  border-radius: 5px;
+}
+
+#more1 {
+  color: rgba(238, 183, 81, 0.979);
+  border: 1px solid rgba(238, 183, 81, 0.979);
+  border-radius: 2px;
+}
+
+#more2 {
+  color: rgba(24, 83, 59, 0.979);
+  border: 1px solid rgba(24, 83, 59, 0.979);
+  border-radius: 2px;
+}
+
+#more3 {
+  color: rgba(87, 56, 16, 0.979);
+  border: 1px solid rgba(87, 56, 16, 0.979);
+  border-radius: 2px;
+}
