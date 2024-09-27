@@ -18,22 +18,27 @@ p {
 }
 
 header {
+  color: gray;
   background-color: white;
+  box-shadow: 1px 1px 5px 1px whitesmoke;
   display: flex;
   justify-content: space-between;
   padding-left: 30vh;
-  padding-right: 30vh;
+  padding-right: 150px;
   align-items: center;
   border-color: black 10px;
   height: 100px;
+  width: 100%;
+  position: fixed;
 }
 
 .section1 {
-  height: 70vh;
+  padding-top: 80px;
+  height: 65vh;
 }
 
 #star {
-  height: 70vh;
+  height: 65vh;
   width: 100%;
 }
 
@@ -173,8 +178,10 @@ a {
   text-decoration: none;
   color: #333;
 }
+
 /* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
 menu박스 가운데정렬, 글자가운데 정렬 */
+
 #menu {
   font: bold 16px "malgun gothic";
   width: 700px;
@@ -212,9 +219,10 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 }
 
 footer {
+  font-size: 2vh;
   border-top: solid 0.1px gray;
-  padding-top: 150px;
-  height: 30vh;
+  padding-top: 40px;
+  height: 20vh;
   text-align: center;
   text-align: justify;
   padding-left: 20%;
@@ -244,6 +252,11 @@ button {
   width: 90px;
   border: hotpink solid 2px;
   border-radius: 5px;
+}
+
+button:hover {
+  background-color: pink;
+  transition: 1s;
 }
 
 #more1 {
