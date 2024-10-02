@@ -17,14 +17,19 @@
 // dropdownBtn 클릭하면, menuList 나온다
 
 const topmenu = document.querySelector(".topmenu");
-const menu = document.querySelector(".menu");
-const submenu = document.querySelector(".submenu");
-const allmenu = document.querySelectorAll(".allmenu");
+const allsubmenu = document.querySelector(".allsubmenu");
 
-// topmenu.addEventListener("click", function () {
-  submenu.classList.("submenu");
-// });
+// topmenu에 마우스가 올라갔을 때
+topmenu.addEventListener("mouseenter", function () {
+  allsubmenu.classList.add("active");
+});
 
-//menu.addEventListener("blur", function () {
-//  menuList.classList.remove("show");
+// topmenu에서 마우스가 내려갔을 때
+//topmenu.addEventListener("mouseleave", function () {
+//  allsubmenu.classList.remove("active");
 //});
+
+// allsubmenu에서 마우스가 내려갔을 때
+allsubmenu.addEventListener("mouseleave", function () {
+  allsubmenu.classList.remove("active");
+});
