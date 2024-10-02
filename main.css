@@ -17,28 +17,12 @@ p {
   margin-bottom: 30px;
 }
 
-header {
-  color: gray;
-  background-color: white;
-  box-shadow: 1px 1px 5px 1px whitesmoke;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 30vh;
-  padding-right: 150px;
-  align-items: center;
-  border-color: black 10px;
-  height: 100px;
-  width: 100%;
-  position: fixed;
-}
-
 .section1 {
-  padding-top: 80px;
   height: 65vh;
 }
 
 #star {
-  height: 65vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -164,60 +148,6 @@ header {
   height: 350px;
 }
 
-/* 전체영역에서 여백을 없애줌 */
-* {
-  margin: 0;
-  padding: 0;
-}
-/* ul li태그에 리스트 스타일을 없앰 */
-ul li {
-  list-style: none;
-}
-/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
-menu박스 가운데정렬, 글자가운데 정렬 */
-
-#menu {
-  font: bold 16px "malgun gothic";
-  width: 700px;
-  height: 50px;
-  background: #ffffff;
-  color: black;
-  line-height: 50px;
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-}
-
-/* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
-
-#menu > ul > li {
-  float: left;
-  width: 140px;
-}
-
-#menu > ul > li > ul {
-  width: 130px;
-  display: none;
-  position: absolute;
-  font-size: 14px;
-  background: whitesmoke;
-}
-
-#menu > ul > li:hover > ul {
-  display: block;
-}
-
-#menu > ul > li > ul > li:hover {
-  background: pink;
-  transition: ease 1s;
-}
-
 footer {
   font-size: 2vh;
   border-top: solid 0.1px gray;
@@ -275,4 +205,34 @@ button:hover {
   color: rgba(87, 56, 16, 0.979);
   border: 1px solid rgba(87, 56, 16, 0.979);
   border-radius: 2px;
+}
+
+.topmenu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: beige;
+  height: 150px;
+  align-items: center;
+}
+
+.allmenu {
+  width: 900px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.submenu {
+  background-color: aliceblue;
+  width: 100%;
+  height: 500px;
+  list-style: none;
+  display: none;
+}
+
+.menu > li {
+  padding: 50px;
 }
