@@ -31,10 +31,6 @@ p {
   width: 100%;
 }
 
-#image12 {
-  display: flex;
-}
-
 #image1 {
   height: 300px;
   border-radius: 10px;
@@ -61,10 +57,6 @@ p {
 
 .section2 > div {
   color: rgba(238, 183, 81, 0.979);
-}
-
-#image34 {
-  display: flex;
 }
 
 #image3 {
@@ -288,4 +280,20 @@ button:hover {
   border-radius: 20%;
   background-color: pink;
   transition: 0.9s;
+}
+
+.slider__img {
+  /* 이미지가 보이는 영역 */
+  display: flex;
+  width: 800px;
+  overflow: hidden;
+}
+.slider__inner {
+  /* 움직이는 이미지 */
+  display: flex;
+}
+.slider {
+  /* 개별적인 이미지 */
+  position: relative;
+  width: 400px;
 }

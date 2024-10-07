@@ -1,16 +1,35 @@
-const dropdownForm = document.querySelector(".drowpdown");
-const dropdownBtn = document.querySelector(".dropdown-toggle");
-const menuList = document.querySelector(".dropdown-menu");
-const itemList = document.querySelector(".dropdown-item");
-const optionBtn = document.querySelectorAll(".dropdown-option");
-const submit = document.querySelector(".next-button");
+const sliderWrap = document.querySelector(".slider__wrap");
+const sliderImg = document.querySelector(".slider__img"); // 보여지는 영역
+const sliderInner = document.querySelector(".slider__inner"); // 움직이는 영역
+const slider = document.querySelectorAll(".slider"); // 개별적 이미지
+const sliderDot = document.querySelector(".slider__dot"); // dot
 
-// dropdownBtn 클릭하면, menuList 나온다
-// dropdownBtn.addEventListener("click", function () {
-//   menuList.classList.toggle("show");
-// });
+let currentIndex = 0; // 현재 이미지
+let sliderCount = slider.length; // 이미지 개수
+let sliderWidth = sliderImg.offsetWidth; // 이미지 가로값
+let dotIndex = "";
 
-// menuList는 사라진다
-// dropdownBtn.addEventListener("blur", function () {
-//   menuList.classList.remove("show");
-// });
+function init() {
+  slider.forEach(() => {
+    dotIndex += "<a href='#' class='dot'>이미지1</a>";
+  });
+  sliderDot.innerHTML = dotIndex;
+  sliderDot.firstChild.classList.add("active");
+}
+init();
+
+function gotoSlider(num) {
+  sliderInner.style.transition = "all 400ms";
+  sliderInner.style.transform = "translateX(" + -sliderWidth * num + "px)";
+  currentIndex = num;
+
+  const dotActive = document.querySelectorAll(".slider__dot .dot");
+  dotActive.forEach((el) => el.classList.remove("active"));
+  dotActive[num].classList.add("active");
+}
+
+document.querySelectorAll(".slider__dot .dot").forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    gotoSlider(index);
+  });
+});
