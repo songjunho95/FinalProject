@@ -1,0 +1,16 @@
+package com.kh.FinalProject.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MemberService {
+
+	@Autowired
+	private MemberMapper mapper;
+	
+	public void register(Member member) {
+		mapper.register(member);
+	}
+	
+}
