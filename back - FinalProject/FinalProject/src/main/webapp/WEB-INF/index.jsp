@@ -15,7 +15,7 @@
 <body>
 <header class="topmenu">
     <div>
-        <img src="/img/바나프레소 로고.png"  id="logo"/>
+        <img src="/img/바나프레소 로고.PNG"  id="logo"/>
     </div>
 
     <div class="allmenu">
@@ -56,7 +56,7 @@
         </li>
 
         <li>
-            <a href="/signup.html">회원 가입</a>
+            <a href="/login.jsp">회원 가입</a>
             <a href="">신메뉴</a>
             <a href="">전체 메뉴</a>
             <a href="">커피이야기</a>
@@ -158,11 +158,11 @@
 <div class="slider__wrap">
     <div class="slider__img">
         <div class="slider__inner">
-            <div class="slider"><img src="/img/황치즈티그레.PNG" id="image4"></div>
+            <div class="slider"><img src="/img/황치즈티그레.PNG" id="image5"></div>
+            <div class="slider"><img src="/img/피스타치오티그레.PNG" id="image6"></div>
+			
+			<div class="slider"><img src="/img/황치즈티그레.PNG" id="image6"></div>
             <div class="slider"><img src="/img/피스타치오티그레.PNG" id="image5"></div>
-
-            <div class="slider"><img src="/img/피스타치오티그레.PNG" id="image5"></div>
-            <div class="slider"><img src="/img/황치즈티그레.PNG" id="image4"></div>
         </div>
      </div>
 </div>
@@ -188,7 +188,7 @@
         <h1>가까운 매장 찾기</h1>
         <p>전국어디서나 바나를 만나보세요</p>
         <div>
-            <input type="text" placeholder="매장명 또는 주소" id="text"/ >
+            <input type="text" placeholder="매장명 또는 주소" id="text" />
             <button onclick="">검색</button>
         </div>
     <img src="/img/지도.png">
@@ -214,8 +214,7 @@
         대표전화 : 1811 - 1111 / 고객문의 : qna@banapresso.com 또는 1811-1111
     </p>
 </footer>
-<script src="/jQuery.js"></script>
-<script src="main.js"></script>
-
+<script src="/js/main.js"></script>
+<script src="/js/jQurey.js"></script>
 </body>
 </html>
