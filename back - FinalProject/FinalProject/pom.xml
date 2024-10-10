@@ -12,7 +12,7 @@
 	<artifactId>mybatis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>01_MyBatis</name>
+	<name>FinalProject</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -100,5 +100,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

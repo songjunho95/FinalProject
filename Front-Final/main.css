@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sunflower", sans-serif;
+}
+
+li {
+  text-decoration-line: none;
+}
+
+h3 {
+  font-size: 5vh;
+}
+
+h2 {
+  font-size: 4vh;
+  margin: 30px;
+}
+
+p {
+  font-size: 2vh;
+  margin-bottom: 30px;
+}
+
+.section1 {
+  height: 65vh;
+}
+
+#star {
+  height: 70vh;
+  width: 100%;
+}
+
+#image1 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+#image2 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 10%;
+  background-color: rgba(153, 205, 50, 0.281);
+  height: 60vh;
+}
+
+.section2 > div {
+  color: rgba(238, 183, 81, 0.979);
+}
+
+#image3 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+#image4 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 10%;
+  background-color: rgba(127, 255, 212, 0.473);
+  height: 60vh;
+}
+
+.section3 > div {
+  color: rgba(24, 83, 59, 0.979);
+}
+
+.section4 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 10%;
+  background-color: bisque;
+  height: 60vh;
+}
+
+.section4 > div {
+  color: rgba(87, 56, 16, 0.979);
+}
+
+#image45 {
+  display: flex;
+}
+
+#image4 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+#image5 {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gray;
+  margin: 30px;
+}
+
+.section5 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 500px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 0, 0.322) 50%,
+    rgba(0, 17, 255, 0.212) 50%
+  );
+}
+
+.app {
+  margin-top: 65px;
+}
+
+.map {
+  margin-top: 100px;
+}
+
+.section6 {
+  background-color: rgba(0, 17, 255, 0.212);
+  height: 350px;
+}
+
+footer {
+  font-size: 2vh;
+  border-top: solid 0.1px gray;
+  padding-top: 40px;
+  height: 20vh;
+  text-align: center;
+  text-align: justify;
+  padding-left: 20%;
+  margin: 5px;
+}
+
+#text {
+  border: hotpink solid 2px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#phone {
+  border: hotpink solid 2px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  width: 300px;
+}
+
+button {
+  height: 50px;
+  color: white;
+  background-color: hotpink;
+  width: 90px;
+  border: hotpink solid 2px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: pink;
+  transition: 1s;
+}
+
+#more1 {
+  color: rgba(238, 183, 81, 0.979);
+  border: 1px solid rgba(238, 183, 81, 0.979);
+  border-radius: 2px;
+}
+
+#more2 {
+  color: rgba(24, 83, 59, 0.979);
+  border: 1px solid rgba(24, 83, 59, 0.979);
+  border-radius: 2px;
+}
+
+#more3 {
+  color: rgba(87, 56, 16, 0.979);
+  border: 1px solid rgba(87, 56, 16, 0.979);
+  border-radius: 2px;
+}
+
+.topmenu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  height: 150px;
+  align-items: center;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.allmenu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1000px;
+  font-size: larger;
+  padding: 10px;
+}
+
+.allmenu > li {
+  width: 120px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu > li {
+  width: 160px;
+  padding: 5px;
+}
+
+.menu > li > a {
+  text-decoration-line: none;
+}
+
+.menu > li > a:hover {
+  color: hotpink;
+}
+.allsubmenu {
+  display: none;
+  justify-content: space-around;
+}
+.allsubmenu.active {
+  display: flex;
+}
+
+.submenu {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  width: 1000px;
+  height: 300px;
+}
+
+.submenu > ul {
+  display: flex;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.submenu > ul > li {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  padding: 30px;
+}
+
+.submenu > ul > li > a {
+  text-decoration: none;
+}
+
+.submenu > ul > li > a:hover {
+  border-radius: 20%;
+  background-color: pink;
+  transition: 0.9s;
+}
+
+.slider__img {
+  /* 이미지가 보이는 영역 */
+  display: flex;
+  width: 800px;
+  overflow: hidden;
+}
+.slider__inner {
+  /* 움직이는 이미지 */
+  display: flex;
+}
+.slider {
+  /* 개별적인 이미지 */
+  position: relative;
+  width: 400px;
+}

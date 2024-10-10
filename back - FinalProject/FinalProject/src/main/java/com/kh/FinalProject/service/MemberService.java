@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.kh.FinalProject.dto.SearchDTO;
 import com.kh.FinalProject.vo.Member;
+import com.kh.FinalProject.vo.SearchDTO;
 
 import mapper.MemberMapper;
 

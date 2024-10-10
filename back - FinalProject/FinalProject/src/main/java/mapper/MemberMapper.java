@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.kh.FinalProject.dto.SearchDTO;
 import com.kh.FinalProject.vo.Member;
+import com.kh.FinalProject.vo.SearchDTO;
 
 @Mapper
 public interface MemberMapper {
