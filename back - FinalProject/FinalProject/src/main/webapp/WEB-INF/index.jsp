@@ -56,7 +56,7 @@
         </li>
 
         <li>
-            <a href="/login.jsp">회원 가입</a>
+            <a href="../mypage/login.jsp">회원 가입</a>
             <a href="">신메뉴</a>
             <a href="">전체 메뉴</a>
             <a href="">커피이야기</a>

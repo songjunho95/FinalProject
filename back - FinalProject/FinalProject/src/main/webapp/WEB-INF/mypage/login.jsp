@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -80,7 +79,7 @@
     </section>
 
     <section>
-        <form class="signupAllmenu">
+        <form action="/login.jsp" method="post" class="signupAllmenu">
 
             <div class="signupMenu">
                 <label for="userId">&#9749; 아이디 : </label>

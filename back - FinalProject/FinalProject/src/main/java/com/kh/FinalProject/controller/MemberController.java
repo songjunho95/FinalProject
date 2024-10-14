@@ -28,17 +28,6 @@ public class MemberController {
 		return "index";
 	}
 	
-	@GetMapping("/register")
-	public String register() {
-		return "mypage/register";
-	}
-	
-	@PostMapping("/register")
-	public String register(Member vo) {
-		service.register(vo);
-		return "redirect:/";
-	}
-	
 	@GetMapping("/login")
 	public String login() {
 		return "mypage/login";
@@ -48,7 +37,7 @@ public class MemberController {
 	public String login(Member vo, HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		session.setAttribute("vo", service.login(vo));
-		return "redirect:/";
+		return "login";
 	}
 	
 	@GetMapping("/logout")
