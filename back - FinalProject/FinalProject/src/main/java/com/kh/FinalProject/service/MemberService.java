@@ -1,43 +1,43 @@
 package com.kh.FinalProject.service;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.kh.FinalProject.vo.Member;
-import com.kh.FinalProject.vo.SearchDTO;
+import com.kh.FinalProject.model.vo.Member;
 
 import mapper.MemberMapper;
 
 @Service
 public class MemberService {
-
+	
 	@Autowired
 	private MemberMapper mapper;
 	
-	public void register(Member member) {
-		mapper.register(member);
+	private BCryptPasswordEncoder bcpe = new BCryptPasswordEncoder();
+	
+	public void register(Member vo) {
+		//System.out.println("암호화 전 : " + vo.getPassword());
+		//System.out.println("암호화 후 : " + bcpe.encode(vo.getPassword()));
+		
+		// 암호화 된 비밀번호로 저장
+		vo.setPassword(bcpe.encode(vo.getPassword()));
+		vo.setRole("ROLE_ADMIN");
+		
+		mapper.register(vo);
 	}
 	
-	public List<Member> allMember() {
-		return mapper.allMember();
-	}
-	
-	public Member login(Member member) {
-		return mapper.login(member);
-	}
-	
-	public void update(Member member) {
-		mapper.update(member);
-	}
-	
-	public List<Member> search(SearchDTO dto) {
-		return mapper.search(dto);
-	}
-	
-	public void delete(List<String> idList) {
-		mapper.delete(idList);
+	public Member login(Member vo) {
+		//System.out.println("사용자가 입력한 정보 : " + vo);
+		Member member = mapper.login(vo.getId());
+		//System.out.println("DB에 있는 사용자 정보 : " + member);
+		
+		if(member!=null && bcpe.matches(vo.getPassword(), member.getPassword())) {
+			//System.out.println("비밀번호 일치한지 체크 : " + bcpe.matches(vo.getPassword(), member.getPassword()));
+			return member;
+		}
+		
+		return null;
 	}
 
 }

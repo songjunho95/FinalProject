@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sunflower", sans-serif;
+}
+
+/*헤더메뉴*/
+.topmenu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  height: 150px;
+  align-items: center;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.allmenu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1000px;
+  font-size: larger;
+  padding: 10px;
+}
+
+.allmenu > li {
+  width: 120px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu > li {
+  width: 160px;
+  padding: 5px;
+}
+
+.menu > li > a {
+  text-decoration-line: none;
+}
+
+.menu > li > a:hover {
+  color: hotpink;
+}
+.allsubmenu {
+  display: none;
+  justify-content: space-around;
+}
+.allsubmenu.active {
+  display: flex;
+}
+
+.submenu {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  width: 1000px;
+  height: 300px;
+}
+
+.submenu > ul {
+  display: flex;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.submenu > ul > li {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  padding: 30px;
+}
+
+.submenu > ul > li > a {
+  text-decoration: none;
+}
+
+.submenu > ul > li > a:hover {
+  border-radius: 20%;
+  background-color: pink;
+  transition: 0.9s;
+}
+
+/*하단 메뉴 */
+
+footer {
+  font-size: 2vh;
+  border-top: solid 0.1px gray;
+  padding-top: 40px;
+  height: 20vh;
+  text-align: center;
+  text-align: justify;
+  padding-left: 20%;
+  margin: 5px;
+}
+
+form > h2 {
+  color: hotpink;
+}
+
+form {
+  background-color: pink;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: white;
+}
+
+form > input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.button {
+  background-color: hotpink;
+  color: aliceblue;
+  border-color: aliceblue;
+}
+
+.button:hover {
+  background-color: pink;
+}
