@@ -26,12 +26,17 @@ public class PageController {
 	public String login() {
 		return "login";
 	}
+
 	
 	@GetMapping("/review")
 	public String review() {
 		return "review";
 	}
 	
+	@GetMapping("/reviewlist")
+	public String reviewlist() {
+		return "reviewlist";
+	}
 
 }
 
