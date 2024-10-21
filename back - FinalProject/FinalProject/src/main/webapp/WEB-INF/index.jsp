@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap" rel="stylesheet">
+    
     <title>Document</title>
 </head>
 <body>
@@ -48,6 +50,26 @@
 
 </header>
 
+			<sec:authorize access="!isAuthenticated()">
+			<button type="button" onclick="location.href='/login'">
+				로그인
+			</button>
+			</sec:authorize>
+			
+			<sec:authorize access="isAuthenticated()">
+			<button type="button" onclick="location.href='/logout'">
+				로그아웃
+			</button>
+			</sec:authorize>
+
+
+
+
+
+
+
+
+
 <section class="allsubmenu">
 <div></div>
 <div class="submenu">
@@ -60,10 +82,12 @@
 
         <li>
             <a href="/register">회원 가입</a>
-            <a class="nav-link" sec:authorize="isAnonymous()" th:href="/login">로그인</a> <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}">로그아웃</a>
+            <a href="/login">로그인</a>
+            <a href="/logout">로그아웃</a>
             <a href="">신메뉴</a>
             <a href="">전체 메뉴</a>
             <a href="">커피이야기</a>
+            
         </li>
 
         <li>

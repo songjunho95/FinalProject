@@ -69,7 +69,7 @@ public class MemberController {
 	@GetMapping("/logout")
     public String setAttribute(HttpServletRequest request, HttpServletResponse response) {
         new SecurityContextLogoutHandler().logout(request, response, SecurityContextHolder.getContext().getAuthentication());
-        return "/logout";
+        return "redirect:/logout";
     }
 
 	
