@@ -83,6 +83,36 @@
   transition: 0.9s;
 }
 
+
+/* 회원가입 폼 스타일 */
+
+.container {
+  border: 1px solid hotpink;
+  background-color: pink;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+button {
+  height: 50px;
+  color: white;
+  background-color: hotpink;
+  width: 90px;
+  border: hotpink solid 2px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+button:hover {
+  cursor: alias;
+  background-color: pink;
+  transition: 0.5s;
+}
+
+
 /*하단 메뉴 */
 
 footer {
@@ -94,52 +124,4 @@ footer {
   text-align: justify;
   padding-left: 20%;
   margin: 5px;
-}
-
-/* 회원가입 폼 스타일 */
-
-.signupAllmenu {
-  font-family: "Sunflower", sans-serif;
-  font-size: x-large;
-  background-color: aliceblue;
-  height: 50vh;
-  display: block;
-  text-align: center;
-}
-
-.signupMenu {
-  padding: 30px;
-}
-
-.signupMenu input {
-  height: 30px;
-  width: 50vh;
-}
-
-form {
-  border: 1px solid hotpink;
-  padding: 10px;
-}
-form div {
-  margin-bottom: 10px;
-}
-form span {
-  display: block;
-  color: pink;
-  margin-left: 12px;
-}
-
-button {
-  height: 50px;
-  color: white;
-  background-color: hotpink;
-  width: 90px;
-  border: hotpink solid 2px;
-  border-radius: 5px;
-}
-
-button:hover {
-  cursor: alias;
-  background-color: pink;
-  transition: 0.5s;
 }

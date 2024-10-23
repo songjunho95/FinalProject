@@ -3,12 +3,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/signup.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 	<script src="https://kit.fontawesome.com/071562b1d0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="stylesheet" href="/css/signup.css" />
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap" rel="stylesheet">
     <title>Document</title>
@@ -81,39 +83,26 @@
       </div>
     </section>
 
-    <section>
-        <form action="/register" method="post" class="signupAllmenu">
-
-            <div class="signupMenu">
-                <label for="userId">&#9749; 아이디 : </label>
-                <input type="text" id="userId" name="id" />
-                <span id="userIdSpan">
-                 
-                </span>
-            </div>
-
-            <div class="signupMenu">
-                <label for="userPwd">&#9749; 비밀번호 : </label>
-                <input type="password" id="userPwd" name="password" />
-                <span id="userPwdSpan"> </span>
-              </div>
-
-
-              <div class="signupMenu">
-                <label for="userName">&#9749; 이름 : </label>
-                <input type="text" id="userName" name="name" />
-                <span id="userNameSpan"></span>
-              </div>
-              <button type="submit">회원가입</button>
-              <button type="reset">취소</button>
-      
-        </form>
-
-
-
-
-    </section>
-
+  <div class="container">
+		<form action="/signup" method="post" onsubmit="return validate()">
+			<div class="mb-3">
+				<label for="id" class="form-label">아이디</label> 
+				<input type="text" class="form-control" id="id" name="id">
+				<div id="idCheck" class="form-text"></div>
+			</div>
+			<div class="mb-3">
+				<label for="password" class="form-label">비밀번호</label>
+				<input type="password" class="form-control" id="password" name="password">
+				<div id="pwdCheck" class="form-text"></div>
+			</div>
+			<div class="mb-3">
+				<label for="email" class="form-label">이름</label> 
+				<input type="text" class="form-control" id="name" name="name">
+				<div id="emailCheck" class="form-text"></div>
+			</div>
+		<button type="submit" class="btn btn-dark">회원가입</button>
+	</form>
+	</div>
 
     <footer>
 
@@ -135,8 +124,7 @@
         </p>
     </footer>
     <script src="/js/main.js"></script>
-    <script src="/js/signup.js"></script>
-
+	<script src="/js/signup.js"></script>
   </body>
 </html>
     

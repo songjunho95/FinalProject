@@ -115,12 +115,13 @@ form > input {
   margin: 10px;
 }
 
-.button {
+button {
+  margin: 15px;
   background-color: hotpink;
   color: aliceblue;
   border-color: aliceblue;
 }
 
-.button:hover {
+button:hover {
   background-color: pink;
 }
