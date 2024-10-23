@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,26 +53,20 @@
 
 </header>
 
+		<div class="header-end">
 			<sec:authorize access="!isAuthenticated()">
 			<button type="button" onclick="location.href='/login'">
+				<!-- <i class="fa-solid fa-user"></i> -->
 				로그인
 			</button>
 			</sec:authorize>
-			
 			<sec:authorize access="isAuthenticated()">
 			<button type="button" onclick="location.href='/logout'">
 				로그아웃
 			</button>
 			</sec:authorize>
-
-
-
-
-
-
-
-
-
+		</div>
+			
 <section class="allsubmenu">
 <div></div>
 <div class="submenu">
@@ -82,8 +79,6 @@
 
         <li>
             <a href="/register">회원 가입</a>
-            <a href="/login">로그인</a>
-            <a href="/logout">로그아웃</a>
             <a href="">신메뉴</a>
             <a href="">전체 메뉴</a>
             <a href="">커피이야기</a>
@@ -246,6 +241,15 @@
 </footer>
 <script src="/js/main.js"></script>
 <script src="/js/jQurey.js"></script>
+<script>
+	// 로컬 스토리지에 담긴 토큰 가져오기
+	const token = localStorage.getItem("token");
+	
+	$("#logout").click(() => {
+		localStorage.removeItem("token");
+	})
+	
 
+	</script>
 </body>
 </html>

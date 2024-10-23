@@ -81,14 +81,23 @@
       </div>
     </section>
     
-    <form action="/login" method="post">
-      <h2>바나 로그인 :</h2>
-		아이디 : <input type="text" name="id">
-		비밀번호 : <input type="password" name="password"><br>
-		<input type="submit" value="로그인" class="button">
-	</form>
-    
-    
+	<div class="container">
+
+		<form action="/login" method="post">
+			<div class="mb-3">
+				<label for="id" class="form-label">아이디</label> 
+				<input type="text" class="form-control" id="id" name="username">
+				<div id="idCheck" class="form-text"></div>
+			</div>
+			<div class="mb-3">
+				<label for="password" class="form-label">비밀번호</label>
+				<input type="password" class="form-control" id="password" name="password">
+				<div id="pwdCheck" class="form-text"></div>
+			</div>
+			<button type="submit" class="btn btn-dark" id="login">로그인</button>
+		</form>
+	</div>
+	
     
     <footer>
 
@@ -110,6 +119,8 @@
         </p>
     </footer>
     <script src="/js/main.js"></script>
+	<script>
 
+	</script>
   </body>
 </html>
