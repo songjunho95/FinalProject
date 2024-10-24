@@ -84,9 +84,9 @@
         <!-- 리뷰 작성 폼 -->
         <section id="reviewForm">
             <h2>리뷰 작성하기</h2>
-            <form id="reviewFormContent" enctype="multipart/form-data">
+            <form action="/review" method="post" onsubmit="return validate()" id="reviewFormContent" enctype="multipart/form-data" >
                 <label for="rating">별점:</label>
-                <select id="rating" name="rating" required>
+                <select id="rating" name="review_rating" required>
                     <option value="" selected>선택하기</option>
                     <option value="1">⭐</option>
                     <option value="2">⭐⭐</option>
@@ -96,10 +96,10 @@
                 </select>
                 
                 <label for="textbox">의견쓰기:</label>
-                <textarea id="textbox" name="textbox" required></textarea>
+                <textarea id="textbox" name="review_opinion" required></textarea>
                 
                 <label for="imageUpload">사진 업로드:</label>
-                <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+                <input type="file" id="imageUpload" name="review_img" accept="image/*">
                 <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
                 <div id="feedbackMessage" style="display: none;"></div>
                 <button type="submit">등록</button>

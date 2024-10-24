@@ -1,0 +1,11 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.ReviewMapper">
+	<insert id="register" parameterType="Review">
+		INSERT INTO review
+		VALUES (#{review_rating}, #{review_opinion}, #{review_img})
+	</insert>
+	
+	<select id="allReview" resultType="Review">
+		SELECT * FROM review
+	</select>
+</mapper>

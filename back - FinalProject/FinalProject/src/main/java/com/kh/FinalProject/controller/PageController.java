@@ -38,17 +38,6 @@ public class PageController {
 		return "login";
 	}
 	
-	@PostMapping
-	public String login(String password, HttpSession session) {
-		Long id = MemberService.login(password);
-		if (id == null) {
-			return "redirect:/login";
-		}
-		session.setAttribute("userID", id);
-		return "redirect:/";
-	}
-
-
 	
 	@GetMapping("/review")
 	public String review() {

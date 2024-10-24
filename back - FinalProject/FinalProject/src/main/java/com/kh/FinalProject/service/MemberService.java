@@ -37,10 +37,6 @@ public class MemberService implements UserDetailsService {
 		return member.check(username);
 	}
 
-	public static Long login(String password) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	
 }

@@ -241,15 +241,6 @@
 </footer>
 <script src="/js/main.js"></script>
 <script src="/js/jQurey.js"></script>
-<script>
-	// 로컬 스토리지에 담긴 토큰 가져오기
-	const token = localStorage.getItem("token");
-	
-	$("#logout").click(() => {
-		localStorage.removeItem("token");
-	})
-	
 
-	</script>
 </body>
 </html>

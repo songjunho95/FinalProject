@@ -7,18 +7,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.kh.FinalProject.model.vo.Member;
+import com.kh.FinalProject.model.vo.Review;
 import com.kh.FinalProject.service.MemberService;
+import com.kh.FinalProject.service.ReviewService;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class MemberController {
-	@Autowired
-	private MemberService service;
-	
+
 	@Autowired
 	private MemberService member;
+	
+	
 	
 	// 중복체크
 	@ResponseBody
@@ -33,7 +35,5 @@ public class MemberController {
 		member.signup(vo);
 		return "redirect:/";
 	}
-
-	
 }
 
