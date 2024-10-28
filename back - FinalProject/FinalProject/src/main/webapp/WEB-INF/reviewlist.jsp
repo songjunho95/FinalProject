@@ -119,6 +119,6 @@
         </p>
     </footer>
     <script src="/js/main.js"></script>
-	
+	<script src="js/reviewlist.js"></script>
 </body>
 </html>

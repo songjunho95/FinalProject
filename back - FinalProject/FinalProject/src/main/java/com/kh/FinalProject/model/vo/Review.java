@@ -11,9 +11,6 @@ public class Review {
 	private int review_rating;
 	private String review_opinion;
 	private String review_img;
-	
-
-
 }
 
 

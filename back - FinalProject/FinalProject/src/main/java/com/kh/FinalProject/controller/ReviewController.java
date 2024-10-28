@@ -21,12 +21,7 @@ public class ReviewController {
 	
 
 	
-	@ResponseBody
-	@PostMapping("/review")
-	public String create(Review vo) {
-		review.create(vo);	
-		return "redirect:/reviewlist";
-	}
+
 		
 	
 }

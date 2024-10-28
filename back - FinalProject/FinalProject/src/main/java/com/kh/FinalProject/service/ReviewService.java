@@ -34,8 +34,8 @@ public class ReviewService {
 		return mapper.search(dto);
 	}
 	
-	public void delete(List<String> idList) {
-		mapper.delete(idList);
+	public void delete(List<String> reviewList) {
+		mapper.delete(reviewList);
 	}
 
 }

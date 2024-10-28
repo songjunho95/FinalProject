@@ -12,11 +12,13 @@ import com.kh.FinalProject.model.vo.SearchDTO;
 public interface ReviewMapper {
 
 	void create(Review review);
-	List<Review> allReview();
 
 	void update(Review review);
-	List<Review> search(SearchDTO dto);
-	
-	void delete(List<String> idList);
+
+	void delete(List<String> reviewidList);
 	 
+	List<Review> allReview();
+
+	List<Review> search(SearchDTO dto);
+
 }
