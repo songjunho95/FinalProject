@@ -1,13 +1,17 @@
 package com.kh.FinalProject.controller;
 
+import java.util.List;
+
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.kh.FinalProject.model.vo.Member;
+import com.kh.FinalProject.model.vo.Review;
 import com.kh.FinalProject.service.MemberService;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -27,6 +31,7 @@ public class PageController {
 	public String register() {
 		return "signup";
 	}
+	
 	
 	
 	@GetMapping("/login")

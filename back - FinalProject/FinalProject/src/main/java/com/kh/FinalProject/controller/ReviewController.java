@@ -19,10 +19,19 @@ public class ReviewController {
 	@Autowired
 	private ReviewService review;
 	
-
 	
 
-		
+	@PostMapping("/review")
+	public String update(Review vo) {
+		review.update(vo);
+		return "redirect:/";
+	}
+	
+	
+	
+	
+	
+	
 	
 }
 

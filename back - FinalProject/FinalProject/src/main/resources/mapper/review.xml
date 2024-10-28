@@ -7,8 +7,8 @@
 	
 	
 	<insert id="update" parameterType="Review">
-		INSERT INTO review
-		VALUES (#{review_code} #{review_rating}, #{review_opinion}, #{review_img})
+		INSERT INTO review(review_rating, review_opinion, review_img)
+		VALUES (#{review_rating}, #{review_opinion}, #{review_img})
 	</insert>
 	
 

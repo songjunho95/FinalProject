@@ -4913,3 +4913,12 @@ java.lang.IllegalArgumentException: can not get a buffer without a document refe
 
 !ENTRY org.eclipse.lsp4e 4 0 2024-10-28 15:10:54.834
 !MESSAGE [Error]	Unexpected resource file:///D:/clone/FinalProject/back%20-%20FinalProject/finalproject/src/main/java/com/kh/FinalProject/config/SecurityConfig.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-10-28 15:14:22.306
+!MESSAGE [Info]	ESLint server running in node v20.13.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-10-28 15:14:22.337
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.4.5 from path "D:\eclipse\plugins\org.eclipse.wildwebdeveloper_1.2.2.202405280856\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-10-28 15:14:22.339
+!MESSAGE [Info]	Typescript Server version info: {version=5.4.5, source=user-setting}

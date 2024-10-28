@@ -38,4 +38,5 @@ public class ReviewService {
 		mapper.delete(reviewList);
 	}
 
+
 }
