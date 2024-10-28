@@ -1,5 +1,3 @@
 INDEX VERSION 1.134+D:\clone\FinalProject\back - FinalProject\.metadata\.plugins\org.eclipse.jdt.core
 1865797976.index
-1755401707.index
-1337503774.index
 3240079901.index

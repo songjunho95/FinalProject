@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap" rel="stylesheet">
     
-    <title>Document</title>
+    <title>바나프레소</title>
 </head>
 <body>
 <header class="topmenu">
