@@ -38,10 +38,7 @@ public class ReviewService {
 		mapper.delete(reviewList);
 	}
 
-	public <Paging> List<Review> selectAll(Paging paging) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 
 }

@@ -23,10 +23,6 @@ public class ReviewController<Paging> {
 	@Autowired
 	private ReviewService review;
 	
-	@Autowired
-	private ReviewService service;
-	
-	
 	
 
 	@PostMapping("/review")
@@ -34,6 +30,7 @@ public class ReviewController<Paging> {
 		review.update(vo);
 		return "redirect:/";
 	}
+
 	
 	
 }
