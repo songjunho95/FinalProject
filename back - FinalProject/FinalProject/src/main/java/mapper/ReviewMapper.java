@@ -10,10 +10,11 @@ import com.kh.FinalProject.model.vo.Review;
 @Mapper
 public interface ReviewMapper {
 
-	void insert(Review vo);
+	void insert (Review vo);
 	List<Review> selectAll(Paging paging);
 	Review select(int no);
 	void update(Review vo);
 	void delete(int no);
+	int total();
 
 }

@@ -85,7 +85,10 @@
         <section id="reviewForm">
             <h2>리뷰 작성하기</h2>
             <form action="/review" method="post" id="reviewFormContent" >
-        
+        			
+        		<label for="textbox">제목:</label>
+                <textarea id="review_title" name="review_title" required></textarea>	
+        			
                 <label for="rating">별점:</label>
                 <select id="review_rating" name="review_rating" required>
                     <option value="" selected>선택하기</option>
@@ -107,7 +110,7 @@
                 
             </form>
             <!-- 리뷰 리스트로 가는 버튼 추가 -->
-            <a href="/reviewlist" class="review-list-button">리뷰 리스트 보기</a>
+            <a href="/list" class="review-list-button">리뷰 리스트 보기</a>
         </section>
 	</main>
     <footer>

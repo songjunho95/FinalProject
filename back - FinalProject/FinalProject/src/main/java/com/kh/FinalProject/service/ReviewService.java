@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.kh.FinalProject.model.vo.Paging;
 import com.kh.FinalProject.model.vo.Review;
 import com.kh.FinalProject.model.vo.SearchDTO;
 
@@ -17,28 +18,33 @@ public class ReviewService {
 	@Autowired
 	private ReviewMapper mapper;
 	
-	public void create(Review review) {
-		mapper.create(review);
+	public void insert(Review review) {
+		mapper.insert(review);
 	}
 	
-	public List<Review> allMember() {
-		return mapper.allReview();
+	public List<Review> selectAll(Paging paging) {
+		
+		paging.setOffset(paging.getLimit() * (paging.getPage() - 1));
+		
+		return mapper.selectAll(paging);
+	}
+	
+	public int total() {
+		return mapper.total();
 	}
 	
 	
-	public void update(Review review) {
-		mapper.update(review);
+	public Review select(int no) {
+		return mapper.select(no);
 	}
 	
-	public List<Review> search(SearchDTO dto) {
-		return mapper.search(dto);
+	public void update(Review vo) {
+		mapper.update(vo);
 	}
 	
-	public void delete(List<String> reviewList) {
-		mapper.delete(reviewList);
+	public void delete(int no) {
+		mapper.delete(no);
 	}
-
-	
 
 
 }

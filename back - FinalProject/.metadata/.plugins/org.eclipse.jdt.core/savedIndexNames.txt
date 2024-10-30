@@ -49,7 +49,6 @@ INDEX VERSION 1.134+D:\clone\FinalProject\back - FinalProject\.metadata\.plugins
 1950113158.index
 2091731991.index
 805180319.index
-3240079901.index
 2188065682.index
 1314278849.index
 820431788.index

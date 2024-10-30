@@ -12,11 +12,14 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 public class Review {
+	
+	private String review_title;
 	private int review_code;
 	private int review_rating;
 	private String review_opinion;
 	private String review_img;
-
+	
+	private int no;
 	
 	private LocalDateTime date;
 	private Date formatDate;

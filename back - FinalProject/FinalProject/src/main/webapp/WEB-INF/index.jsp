@@ -88,7 +88,7 @@
         <li>
             <a href="">매장찾기</a>
             <a href="/review">리뷰 페이지</a>
-            <a href="/reviewlist">리뷰 리스트</a>
+            <a href="/list">리뷰 리스트</a>
             
         </li>
 

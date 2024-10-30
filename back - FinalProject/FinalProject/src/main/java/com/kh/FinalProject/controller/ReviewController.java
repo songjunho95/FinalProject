@@ -26,8 +26,8 @@ public class ReviewController<Paging> {
 	
 
 	@PostMapping("/review")
-	public String update(Review vo) {
-		review.update(vo);
+	public String insert(Review vo) {
+		review.insert(vo);
 		return "redirect:/";
 	}
 
