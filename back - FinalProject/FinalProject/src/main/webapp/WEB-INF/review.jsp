@@ -84,11 +84,14 @@
         <!-- 리뷰 작성 폼 -->
         <section id="reviewForm">
             <h2>리뷰 작성하기</h2>
-            <form action="/review" method="post" id="reviewFormContent" >
-        			
+            <form action="/review" method="post" id="reviewFormContent" enctype="multipart/form-data">
+        		
+        	<div class="form-group">	
         		<label for="textbox">제목:</label>
-                <textarea id="review_title" name="review_title" required></textarea>	
-        			
+                <input class="form-control" id="review_title" name="review_title" required>	
+        	</div>
+        	
+        	<div class="form-group">
                 <label for="rating">별점:</label>
                 <select id="review_rating" name="review_rating" required>
                     <option value="" selected>선택하기</option>
@@ -98,19 +101,25 @@
                     <option value="4">⭐⭐⭐⭐</option>
                     <option value="5">⭐⭐⭐⭐⭐</option>
                 </select>
-                
+            </div>    
+            
+            
+            <div class="form-group">
                 <label for="textbox">의견쓰기:</label>
-                <textarea id="review_opinion" name="review_opinion" required></textarea>
+                <input class="form-control" id="review_opinion" name="review_opinion" required>
+            </div>    
                 
+             <div class="form-group">      
                 <label for="imageUpload">사진 업로드:</label>
-                <input type="file" id="review_img" name="review_img" accept="image/*">
-                <img id="imagePreview" src="" alt="Image Preview" style="display: none;">
-                <div id="feedbackMessage" style="display: none;"></div>
+                <input type="file" id="review_img" name="file" accept="image/*">
+             </div>
+              
+        
                 <button type="submit">등록</button>
                 
             </form>
             <!-- 리뷰 리스트로 가는 버튼 추가 -->
-            <a href="/list" class="review-list-button">리뷰 리스트 보기</a>
+            <a href="/list" class="review-list-button" class="btn btn-outline-warning">리뷰 리스트 보기</a>
         </section>
 	</main>
     <footer>

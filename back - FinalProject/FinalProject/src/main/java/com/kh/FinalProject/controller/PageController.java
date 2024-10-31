@@ -49,11 +49,7 @@ public class PageController {
 		return "review";
 	}
 	
-	@GetMapping("/reviewlist")
-	public String reviewlist() {
-		return "reviewlist";
-	}
-	
+
 }
 
 

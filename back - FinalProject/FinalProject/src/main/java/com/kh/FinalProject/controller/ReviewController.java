@@ -20,19 +20,10 @@ import com.kh.FinalProject.service.ReviewService;
 public class ReviewController<Paging> {
 
 	
-	@Autowired
-	private ReviewService review;
-	
-	
 
-	@PostMapping("/review")
-	public String insert(Review vo) {
-		review.insert(vo);
-		return "redirect:/";
-	}
 
-	
-	
+
+
 }
 
 

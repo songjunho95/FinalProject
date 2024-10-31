@@ -68,6 +68,21 @@ public class ListController {
 		return "redirect:/";
 	}
 	
+	@PostMapping("/review")
+	public String review(Review vo) throws IllegalStateException, IOException {
+		
+		// 1. 파일 업로드 처리
+		String url = fileUpload(vo.getFile());
+		vo.setUrl(url);
+
+		// 2. 해당 파일 URL과 함께 title, content DB에 저장
+		service.insert(vo);
+
+		System.out.println(vo);
+
+		return "redirect:/list";
+	}
+	
 	
 	
 	@GetMapping("/view")
@@ -83,6 +98,7 @@ public class ListController {
 
 		List<Review> list = service.selectAll(paging);
 		
+	
 		model.addAttribute("list", list);
 		model.addAttribute("paging", new Paging(paging.getPage(), service.total()));
 
@@ -92,7 +108,8 @@ public class ListController {
 	
 
 	@PostMapping("/update")
-	public String update(Review vo) throws IllegalStateException, IOException {
+	public String update(Review vo) throws IllegalStateException, IOException  {
+		
 		System.out.println(vo);
 		System.out.println(vo.getFile().isEmpty());
 		
@@ -107,31 +124,36 @@ public class ListController {
 			String url = fileUpload(vo.getFile());
 			vo.setUrl(url);
 		}
-
+		
 		service.update(vo);
 
 		return "redirect:/list";
 	}
 	
-	
-	
-	
-	
-	
-	
+
 	
 	@GetMapping("/delete")
 	public String delete(int no) {
 		
-		// 업로드한 파일 삭제 (필요한 건 URL)
-		Review review = service.select(no);
-		if(review.getUrl()!=null) {
-			File file = new File(path + review.getUrl());
-			file.delete();
-		}
 		service.delete(no);
 		return "redirect:/list";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

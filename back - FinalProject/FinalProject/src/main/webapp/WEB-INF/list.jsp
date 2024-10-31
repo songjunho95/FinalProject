@@ -117,7 +117,7 @@
 				<tr>
 					<th>#번호</th>
 					<th>제목</th>
-					<th>작성시간</th>
+					<th>별점</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -127,7 +127,7 @@
 						<td>${review.review_code}</td>
 						<td><a href="/view?no=${review.review_code}">${review.review_title}</a></td>
 						<td>
-							<fmt:formatDate value="${review.formatDate}" pattern="yyyy-MM-dd HH:mm:ss"/>
+							${review.review_rating}
 						</td>
 					</tr>
 				</c:forEach>

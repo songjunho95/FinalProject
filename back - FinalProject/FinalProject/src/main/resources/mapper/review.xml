@@ -12,13 +12,13 @@
 	</select>
 	
 	<select id="select" parameterType="int" resultType="Review">
-		SELECT * FROM review 
+		SELECT * FROM review
 		WHERE review_code = #{review_code}
 	</select>
 	
-	<update id="update" parameterType="review">
+	<update id="update" parameterType="Review">
 		UPDATE review
-		SET title=#{title}, content=#{content}, url=#{url}
+		SET review_title=#{review.review_title}, review_opinion=#{review.review_opinion}
 		WHERE review_code = #{review_code}
 	</update>
 	

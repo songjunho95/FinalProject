@@ -8,7 +8,9 @@ import org.springframework.web.multipart.MultipartFile;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+
 
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 public class Review {
@@ -19,6 +21,10 @@ public class Review {
 	private String review_opinion;
 	private String review_img;
 	
+	
+	
+	private String title;
+	private String content;
 	private int no;
 	
 	private LocalDateTime date;
@@ -26,6 +32,8 @@ public class Review {
 	
 	private String url;
 	private MultipartFile file;
+	
+	
 }
 
 
