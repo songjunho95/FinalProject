@@ -20,7 +20,6 @@
 		
 
 			<div class="form-group">
-				<input type="hidden" name="review_title" value="${review.review_code}"/>
 				<label>review_title</label> 
 				<input class="form-control" name="review_title" value="${review.review_title}">
 			</div>
@@ -30,7 +29,7 @@
 			</div>
 			
 			<div class="form-group">
-				<label>Rating</label> <input class="form-control" name="rating"
+				<label>review_rating</label> <input class="form-control" name="review_rating"
 					value="${review.review_rating}">
 			</div>
 			
@@ -45,7 +44,7 @@
 					type="file" accept="image/*">
 			</div>
 			
-			<img src="http://192.168.10.51:8082/${review.url}" width="200" height="200"/>
+			<img src="C:\Users\user1\Desktop\바나프레소 이미지\ ${review.url}" width="200" height="200"/>
 			
 			<button type="submit" class="btn btn-outline-warning">수정</button>
 			

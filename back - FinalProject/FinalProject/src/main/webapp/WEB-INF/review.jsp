@@ -110,8 +110,8 @@
             </div>    
                 
              <div class="form-group">      
-                <label for="imageUpload">사진 업로드:</label>
-                <input type="file" id="review_img" name="file" accept="image/*">
+                <label for="fileUpload">사진 업로드:</label>
+                <input type="file" id="fileUpload" name="file" accept="image/*">
              </div>
               
         
