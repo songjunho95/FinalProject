@@ -15,18 +15,18 @@
 	<div class="container">
 		<h1>게시물 정보</h1>
 		<form action="/update" method="post" enctype="multipart/form-data">
-			<input type="hidden" name="no" value="${review.no}"/>
+			<input type="hidden" name="no" value="${review.review_code}"/>
 			<input type="hidden" name="url" value="${review.url}"/>
 		
 
 			<div class="form-group">
-				<input type="hidden" name="review_code" value="${review.review_code}"/>
-				<label>Title</label> <input class="form-control" name="title"
-					value="${review.review_title}">
+				<input type="hidden" name="review_title" value="${review.review_code}"/>
+				<label>review_title</label> 
+				<input class="form-control" name="review_title" value="${review.review_title}">
 			</div>
 			<div class="form-group">
-				<label>Content</label>
-				<textarea class="form-control" name="content" rows="10">${review.review_opinion}</textarea>
+				<label>review_opinion</label>
+				<textarea class="form-control" name="review_opinion" rows="10">${review.review_opinion}</textarea>
 			</div>
 			
 			<div class="form-group">

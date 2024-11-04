@@ -111,7 +111,6 @@ public class ListController {
 	public String update(Review vo) throws IllegalStateException, IOException  {
 		
 		System.out.println(vo);
-		System.out.println(vo.getFile().isEmpty());
 		
 		if (!vo.getFile().isEmpty()) {
 			// 파일이 비어있지 않다면 기존 이미지 삭제(delete)
@@ -138,23 +137,6 @@ public class ListController {
 		service.delete(no);
 		return "redirect:/list";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 }

@@ -2,8 +2,8 @@
 <mapper namespace="mapper.ReviewMapper">
 	
 	<insert id="insert" parameterType="Review"  useGeneratedKeys="true"  keyProperty="no" keyColumn="no" >
-		INSERT INTO review(review_title, review_rating, review_opinion, review_img)
-		VALUES (#{review_title}, #{review_rating}, #{review_opinion}, #{review_img})
+		INSERT INTO review(review_code, review_title, review_rating, review_opinion, review_img)
+		VALUES (#{review_code}, #{review_title}, #{review_rating}, #{review_opinion}, #{review_img})
 	</insert>
 	
 	<select id="selectAll" parameterType="Paging" resultType="Review">
@@ -18,8 +18,8 @@
 	
 	<update id="update" parameterType="Review">
 		UPDATE review
-		SET review_title=#{review.review_title}, review_opinion=#{review.review_opinion}
-		WHERE review_code = #{review_code}
+		SET review_title=#{review_title}, review_opinion=#{review_opinion}, url=#{url}
+		WHERE review_code = #{no}
 	</update>
 	
 	<delete id="delete" parameterType="int">

@@ -21,14 +21,8 @@ public class Review {
 	private String review_opinion;
 	private String review_img;
 	
-	
-	
-	private String title;
-	private String content;
 	private int no;
 	
-	private LocalDateTime date;
-	private Date formatDate;
 	
 	private String url;
 	private MultipartFile file;
