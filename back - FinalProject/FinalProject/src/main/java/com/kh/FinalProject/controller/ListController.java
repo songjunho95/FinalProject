@@ -25,7 +25,7 @@ import com.kh.FinalProject.service.ReviewService;
 public class ListController {
 
 	
-	private String path = "C:\\Users\\user1\\Desktop\\바나프레소 이미지\\\\";
+	private String path = "C:\\Users\\user1\\Desktop\\바나프레소 이미지";
 	
 	@Autowired
 	private ReviewService service;

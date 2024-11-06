@@ -10,6 +10,9 @@
 	rel="stylesheet"
 	integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
 	crossorigin="anonymous" />
+<link rel="stylesheet" href="/css/view.css" />
+	
+	
 </head>
 <body>
 	<div class="container">
@@ -44,7 +47,7 @@
 					type="file" accept="image/*">
 			</div>
 			
-			<img src="C:\Users\user1\Desktop\바나프레소 이미지\ ${review.url}" width="200" height="200"/>
+			<img  src= "C:\\Users\\user1\\Desktop\\바나프레소 이미지\\ ${review.url}" width=100px; height=100px />
 			
 			<button type="submit" class="btn btn-outline-warning">수정</button>
 			
