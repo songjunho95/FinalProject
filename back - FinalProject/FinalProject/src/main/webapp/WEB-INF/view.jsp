@@ -47,7 +47,7 @@
 					type="file" accept="image/*">
 			</div>
 			
-			<img  src= "C:\\Users\\user1\\Desktop\\바나프레소 이미지\\ ${review.url}" width=100px; height=100px />
+			<img  src= "C:\\Users\\user1\\Desktop\\바나프레소 이미지\\\\ ${review.url}" width=100px; height=100px />
 			
 			<button type="submit" class="btn btn-outline-warning">수정</button>
 			
