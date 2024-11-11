@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sunflower", sans-serif;
+}
+
+/*헤더메뉴*/
+.topmenu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  height: 150px;
+  align-items: center;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.allmenu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1000px;
+  font-size: larger;
+  padding: 10px;
+}
+
+.allmenu > li {
+  width: 120px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu > li {
+  width: 160px;
+  padding: 5px;
+}
+
+.menu > li > a {
+  text-decoration-line: none;
+}
+
+.menu > li > a:hover {
+  color: hotpink;
+}
+.allsubmenu {
+  display: none;
+  justify-content: space-around;
+}
+.allsubmenu.active {
+  display: flex;
+}
+
+.submenu {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  width: 1000px;
+  height: 300px;
+}
+
+.submenu > ul {
+  display: flex;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.submenu > ul > li {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  padding: 30px;
+}
+
+.submenu > ul > li > a {
+  text-decoration: none;
+}
+
+.submenu > ul > li > a:hover {
+  border-radius: 20%;
+  background-color: pink;
+  transition: 0.9s;
+}
+
+/*하단 메뉴 */
+
+footer {
+  font-size: 2vh;
+  border-top: solid 0.1px gray;
+  padding-top: 40px;
+  height: 20vh;
+  text-align: center;
+  text-align: justify;
+  padding-left: 20%;
+  margin: 5px;
+}
+
+/*본문 내용*/
+
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/입점문의.jpg);
+  height: 70vh;
+  color: white;
+  padding-right: 100px;
+  font: strong;
+  font-size: x-large;
+}
+
+.shop > div > h1 {
+  font-size: 7vh;
+  color: pink;
+}
+
+.barista {
+  background-image: url(img/바리스타.jpg);
+  height: 70vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barista > div > h1 {
+  font-size: 7vh;
+  color: pink;
+  padding: 20px;
+}
+
+.barista > div > h3 {
+  font-size: 3vh;
+  color: pink;
+}
